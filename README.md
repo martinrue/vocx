@@ -14,7 +14,7 @@ Commercial TTS engines tend not to support minority languages, particularly cons
 t := vocx.NewTranscriber()
 t.Transcribe("Ĉu vi ŝatas Esperanton? Esperanto estas facila lingvo.")
 
-// czu wij szatas esperanton? esperanto estas fatssijla lijngwo.
+// czu wij szatas esperanton? esperanto estas fatssila lijngwo.
 ```
 
 ### Custom Rules

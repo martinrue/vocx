@@ -17,7 +17,7 @@ func TestTranscribeWithDefaultRules(t *testing.T) {
 		{"Saluton, kiel vi fartas?", "saluton, kijel wij fartas?"},
 		{"La oka numero estas ok.", "la oka numero estas ohk."},
 		{"Tiel estas la mondo.", "tiel estas la mondo."},
-		{"La internacia lingvo estas tre facila.", "la ijnternatssija lijngwo estas tre fatssijla."},
+		{"La internacia lingvo estas tre facila.", "la ijnternatssija lijngwo estas tre fatssila."},
 		{"abcĉdefgĝhĥijĵklmnoprsŝtuŭvz", "abtssczdefgdżhchijyrzklmnoprssztułwz"},
 	}
 
