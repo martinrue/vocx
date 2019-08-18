@@ -1,7 +1,6 @@
 package vocx
 
 import (
-	"fmt"
 	"regexp"
 	"strings"
 )
@@ -52,19 +51,20 @@ func (t *Transcriber) Transcribe(text string) string {
 }
 
 // LoadRules loads a new set of rules from the JSON string.
-func (t *Transcriber) LoadRules(json string) {
+func (t *Transcriber) LoadRules(json string) error {
 	rules, err := loadRules(json)
 	if err != nil {
-		panic(fmt.Errorf("failed to load rules: %v", err))
+		return err
 	}
 
 	t.rules = rules
+	return nil
 }
 
 // NewTranscriber returns a transcriber with default rules.
 func NewTranscriber() *Transcriber {
 	t := &Transcriber{}
-	t.LoadRules(defaultRules)
+	_ = t.LoadRules(defaultRules)
 	return t
 }
 
