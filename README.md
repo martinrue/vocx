@@ -1,5 +1,7 @@
 # vocx
 
+[![CircleCI](https://circleci.com/gh/martinrue/vocx.svg?style=svg)](https://circleci.com/gh/martinrue/vocx)
+
 `vocx` transcribes Esperanto text into phonetic Polish for use in professional TTS engines.
 
 ## Background
