@@ -5,7 +5,7 @@ const defaultRules = `
 	"letters": {
 		"a": "a",
 		"b": "b",
-		"c": "tss",
+		"c": "ts",
 		"ĉ": "cz",
 		"d": "d",
 		"e": "e",
@@ -33,7 +33,7 @@ const defaultRules = `
 		"z": "z"
 	},
 	"fragments": [
-		{ "match": "ci\b", "replace": "cyj" },
+		{ "match": "atsij", "replace": "atssij" },
 		{ "match": "ide\b", "replace": "ijde" },
 		{ "match": "io\b", "replace": "ijo" },
 		{ "match": "ioy\b", "replace": "ijoj" },

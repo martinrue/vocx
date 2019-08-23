@@ -17,8 +17,9 @@ func TestTranscribeWithDefaultRules(t *testing.T) {
 		{"Saluton, kiel vi fartas?", "saluton, kijel wij fartas?"},
 		{"La oka numero estas ok.", "la oka numero estas ohk."},
 		{"Tiel estas la mondo.", "tiel estas la mondo."},
+		{"Mi ricevis mesaĝon", "mij rijtsewijs mesadżon"},
 		{"La internacia lingvo estas tre facila.", "la ijnternatssija lijngwo estas tre fatssila."},
-		{"abcĉdefgĝhĥijĵklmnoprsŝtuŭvz", "abtssczdefgdżhchijyrzklmnoprssztułwz"},
+		{"Abcĉdefgĝhĥijĵklmnoprsŝtuŭvz", "abtsczdefgdżhchijyrzklmnoprssztułwz"},
 	}
 
 	transcriber := vocx.NewTranscriber()
@@ -40,7 +41,7 @@ func TestTranscribeWithCustomRules(t *testing.T) {
 			"letters": {
 				"a": "a",
 				"b": "b",
-				"c": "tss",
+				"c": "ts",
 				"ĉ": "cz",
 				"d": "d",
 				"e": "e",
@@ -68,7 +69,7 @@ func TestTranscribeWithCustomRules(t *testing.T) {
 				"z": "z"
 			},
 			"fragments": [
-				{ "match": "ci\b", "replace": "cyjx" },
+				{ "match": "atsij", "replace": "atssij" },
 				{ "match": "ide\b", "replace": "ijdex" },
 				{ "match": "io\b", "replace": "ijox" },
 				{ "match": "ioy\b", "replace": "ijojx" },
@@ -94,8 +95,9 @@ func TestTranscribeWithCustomRules(t *testing.T) {
 		{"Saluton, kiel vi fartas?", "saluton, kijel wij fartas?"},
 		{"La oka numero estas ok.", "la oka numero estas ohkx."},
 		{"Tiel estas la mondo.", "tixel estas la mondo."},
+		{"Mi ricevis mesaĝon", "mij rijtsewijs mesadżon"},
 		{"La internacia lingvo estas tre facila.", "la ijnternatssija lijngwo estas tre fatssijla."},
-		{"abcĉdefgĝhĥijĵklmnoprsŝtuŭvz", "abtssczdefgdżhchijyrzklmnoprssztułwz"},
+		{"Abcĉdefgĝhĥijĵklmnoprsŝtuŭvz", "abtsczdefgdżhchijyrzklmnoprssztułwz"},
 	}
 
 	transcriber := vocx.NewTranscriber()
