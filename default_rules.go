@@ -41,9 +41,11 @@ const defaultRules = `
 		{ "match": "feyo\b", "replace": "fejo" },
 		{ "match": "feyoy\b", "replace": "feyoj" },
 		{ "match": "feyoyn\b", "replace": "feyoj" },
-		{ "match": "^tij", "replace": "ti" },
 		{ "match": "^ekzij", "replace": "ekzji" },
-		{ "match": "tssijl", "replace": "tssil" }
+		{ "match": "tssijl", "replace": "tssil" },
+		{ "match": "ijuy", "replace": "iuyy" },
+		{ "match": "ijeh", "replace": "ije" },
+		{ "match": "sijlo", "replace": "ssilo" }
 	],
 	"overrides": [
 		{ "eo": "ok", "pl": "ohk" }
