@@ -20,6 +20,7 @@ func TestTranscribeWithDefaultRules(t *testing.T) {
 		{"Mi ricevis mesaĝon", "mij rijtsewijs mesadżon"},
 		{"La internacia lingvo estas tre facila.", "la ijnternatssija lijngwo estas tre fatssila."},
 		{"Abcĉdefgĝhĥijĵklmnoprsŝtuŭvz", "abtsczdefgdżhchijyrzklmnoprssztułwz"},
+		{"La sistemo simple estas bonega", "la syystemo syymple estas bonega"},
 	}
 
 	transcriber := vocx.NewTranscriber()

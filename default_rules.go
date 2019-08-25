@@ -45,7 +45,9 @@ const defaultRules = `
 		{ "match": "tssijl", "replace": "tssil" },
 		{ "match": "ijuy", "replace": "iuyy" },
 		{ "match": "ijeh", "replace": "ije" },
-		{ "match": "sijlo", "replace": "ssilo" }
+		{ "match": "sijlo", "replace": "ssilo" },
+		{ "match": "^sij", "replace": "syy" },
+		{ "match": "tsij", "replace": "tssij" }
 	],
 	"overrides": [
 		{ "eo": "ok", "pl": "ohk" }
