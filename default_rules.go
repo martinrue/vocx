@@ -1,5 +1,7 @@
 package vocx
 
+// TODO: Add fragement grouping to avoid needing the "sssij" reflexive rule.
+
 const defaultRules = `
 {
 	"letters": {
@@ -47,7 +49,9 @@ const defaultRules = `
 		{ "match": "ijeh", "replace": "ije" },
 		{ "match": "sijlo", "replace": "ssilo" },
 		{ "match": "^sij", "replace": "syy" },
-		{ "match": "tsij", "replace": "tssij" }
+		{ "match": "tsij", "replace": "tssij" },
+		{ "match": "sij", "replace": "ssij" },
+		{ "match": "sssij", "replace": "ssij" }
 	],
 	"overrides": [
 		{ "eo": "ok", "pl": "ohk" }
