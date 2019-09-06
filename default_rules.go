@@ -35,6 +35,12 @@ const defaultRules = `
 		"z": "z"
 	},
 	"fragments": [
+		{ "match": "tsx", "replace": "cz" },
+		{ "match": "gx", "replace": "dż" },
+		{ "match": "hx", "replace": "ch" },
+		{ "match": "yx", "replace": "rz" },
+		{ "match": "sx", "replace": "sz" },
+		{ "match": "ux", "replace": "ł" },
 		{ "match": "atsij", "replace": "atssij" },
 		{ "match": "ide\b", "replace": "ijde" },
 		{ "match": "io\b", "replace": "ijo" },
@@ -51,10 +57,34 @@ const defaultRules = `
 		{ "match": "^sij", "replace": "syy" },
 		{ "match": "tsij", "replace": "tssij" },
 		{ "match": "sij", "replace": "ssij" },
-		{ "match": "sssij", "replace": "ssij" }
+		{ "match": "sssij", "replace": "ssij" },
+		{ "match": "rijpozij", "replace": "ryypozyj" }
 	],
 	"overrides": [
-		{ "eo": "ok", "pl": "ohk" }
-	]
+		{ "eo": "ok", "pl": "ohk" },
+		{ "eo": "s-ro", "pl": "sjijnjoro" },
+		{ "eo": "s-ino", "pl": "sjijnjorijno" },
+		{ "eo": "ktp", "pl": "ko-to-po" },
+		{ "eo": "k.t.p", "pl": "ko-to-po" },
+		{ "eo": "atm", "pl": "antałtagmeze" },
+		{ "eo": "ptm", "pl": "posttagmeze" },
+		{ "eo": "bv", "pl": "bonvolu" }
+	],
+	"numbers": {
+		"0": "nulo",
+		"1": "unu",
+		"2": "du",
+		"3": "trij",
+		"4": "kvar",
+		"5": "kvijn",
+		"6": "ses",
+		"7": "sep",
+		"8": "ohk",
+		"9": "nał",
+		"10": "dek",
+		"100": "tsent",
+		"1000": "mijl",
+		"1000000": "mijlijono"
+	}
 }
 `

@@ -24,6 +24,7 @@ type Rules struct {
 	Letters   map[string]string `json:"letters"`
 	Fragments []Fragment        `json:"fragments"`
 	Overrides []Override        `json:"overrides"`
+	Numbers   map[string]string `json:"numbers"`
 }
 
 func (r *Rules) findOverride(word string) string {

@@ -21,12 +21,39 @@ func TestTranscribeWithDefaultRules(t *testing.T) {
 		{"La internacia lingvo estas tre facila.", "la ijnternatssija lijngwo estas tre fatssila."},
 		{"Abcĉdefgĝhĥijĵklmnoprsŝtuŭvz", "abtsczdefgdżhchijyrzklmnoprssztułwz"},
 		{"La sistemo simple estas bonega", "la syystemo syymple estas bonega"},
+		{"Saluton s-ro kaj s-ino", "saluton sjijnjoro kay sjijnjorijno"},
+		{"cxgxhxjxsxux", "czdżchrzszł"},
+		{"ktp", "ko-to-po"},
+		{"k.t.p", "ko-to-po"},
+		{"atm", "antałtagmeze"},
+		{"ptm", "posttagmeze"},
+		{"bv", "bonvolu"},
+		{"1", "unu"},
+		{"5", "kvijn"},
+		{"7,1", "sep, punkto unu"},
+		{"7,15", "sep, punkto dek kvijn"},
+		{"12", "dek du"},
+		{"100", "tsent"},
+		{"600", "ses tsent"},
+		{"110", "tsent dek"},
+		{"115", "tsent dek kvijn"},
+		{"259", "du tsent kvijn dek nał"},
+		{"999", "nał tsent nał dek nał"},
+		{"1150", "mijl, tsent kvijn dek"},
+		{"1250", "mijl, du tsent kvijn dek"},
+		{"1.268", "mijl, du tsent ses dek ohk"},
+		{"5.233,55", "kvijn mijl, du tsent trij dek trij, punkto kvijn dek kvijn"},
+		{"839241,12", "ohk tsent trij dek nał mijl, du tsent kvar dek unu, punkto dek du"},
+		{"1000000", "mijlijono"},
+		{"2000000", "du mijlijono"},
+		{"9.500123", "nał mijlijono, kvijn tsent mijl, tsent du dek trij"},
+		{"249.500123", "du tsent kvar dek nał mijlijono, kvijn tsent mijl, tsent du dek trij"},
 	}
 
 	transcriber := vocx.NewTranscriber()
 
 	for i, test := range tests {
-		t.Run(fmt.Sprintf("default-rules-test-%d", i), func(t *testing.T) {
+		t.Run(fmt.Sprintf("default-rules-test-%d", i+1), func(t *testing.T) {
 			actual := transcriber.Transcribe(test.Input)
 
 			if actual != test.Expected {
