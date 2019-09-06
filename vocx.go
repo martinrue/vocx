@@ -94,7 +94,7 @@ func (t *Transcriber) transcribeNumber(whole int64, fraction int64) string {
 	result := t.transcribeNumberPart(whole)
 
 	if fraction != 0 && fraction < 100 {
-		return fmt.Sprintf("%s, punkto %s", result, t.transcribeNumberPart(fraction))
+		return fmt.Sprintf("%s, komo %s", result, t.transcribeNumberPart(fraction))
 	}
 
 	return result
