@@ -58,7 +58,8 @@ const defaultRules = `
 		{ "match": "tsij", "replace": "tssij" },
 		{ "match": "sij", "replace": "ssij" },
 		{ "match": "sssij", "replace": "ssij" },
-		{ "match": "rijpozij", "replace": "ryypozyj" }
+		{ "match": "rijpozij", "replace": "ryypozyj" },
+		{ "match": "zijs", "replace": "zyjs" }
 	],
 	"overrides": [
 		{ "eo": "ok", "pl": "ohk" },

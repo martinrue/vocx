@@ -22,6 +22,7 @@ func TestTranscribeWithDefaultRules(t *testing.T) {
 		{"Abcĉdefgĝhĥijĵklmnoprsŝtuŭvz", "abtsczdefgdżhchijyrzklmnoprssztułwz"},
 		{"La sistemo simple estas bonega", "la syystemo syymple estas bonega"},
 		{"Saluton s-ro kaj s-ino", "saluton sjijnjoro kay sjijnjorijno"},
+		{"Okazas, okazis, okazos", "okazas, okazyjs, okazos"},
 		{"cxgxhxjxsxux", "czdżchrzszł"},
 		{"ktp", "ko-to-po"},
 		{"k.t.p", "ko-to-po"},
